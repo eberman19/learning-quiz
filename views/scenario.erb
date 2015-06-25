@@ -6,14 +6,44 @@
   </head>
   <body>
     <h1> Scenario Questions </h1>
-    <h3> You're in line at the supermarket and it is LONG. What do you do? </h3>
-    <form>
-      <input type="radio" name="supermarket" value="convo" checked>Start a convo with all your fellow line mates. 
-        <br>
-      <input type="radio" name="supermarket" value="fidget">Fidget and move back and forth.
-        <br>
-      <input type="radio" name="supermarket" value="rock" checked>Rock out to your tunes in your headphones and think of what you need to do. 
-        <br>
-    </form> 
+    <h2> Please only select one answer per question </h2>
+    <h3> <%=@topic1.question1 %> </h3>
+    <form action="/work" method="post">
+      <input type="radio" name="q1" value="V"> <%=@topic1.answer1%>
+    <br>
+      <input type="radio" name="q1" value="T"> <%=@topic1.answer2%>
+    <br>
+      <input type="radio" name="q1" value="A"> <%=@topic1.answer3%>
+      <br>
+     <h3> <%=@topic2.question1 %> </h3>
+      <input type="radio" name="q2" value="V"> <%=@topic2.answer1%>
+    <br>
+      <input type="radio" name="q2" value="A"> <%=@topic2.answer2%>
+    <br>
+      <input type="radio" name="q2" value="T"> <%=@topic2.answer3%>
+      <br>
+     <h3> <%=@topic3.question1 %> </h3>
+      <input type="radio" name="q3" value="A"> <%=@topic3.answer1%>
+    <br>
+      <input type="radio" name="q3" value="V"> <%=@topic3.answer2%>
+    <br>
+      <input type="radio" name="q3" value="T"> <%=@topic3.answer3%>
+      <br>
+     <h3> <%=@topic4.question1 %> </h3>
+      <input type="radio" name="q4" value="A"> <%=@topic4.answer1%>
+    <br>
+      <input type="radio" name="q4" value="T"> <%=@topic4.answer2%>
+    <br>
+      <input type="radio" name="q4" value="C"> <%=@topic4.answer3%>
+      <br>
+     <h3> <%=@topic5.question1 %> </h3>
+      <input type="radio" name="q5" value="V"> <%=@topic5.answer1%>
+    <br>
+      <input type="radio" name="q5" value="A"> <%=@topic5.answer2%>
+    <br>
+      <input type="radio" name="q5" value="T"> <%=@topic5.answer3%>
+      <br>
+      <input type="submit" name="next" href="/work">
+    </form>
   </body>
 </html>

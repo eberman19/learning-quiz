@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Study Habit/Work Questions </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <h1> Study Habit/Work Questions </h1>
+    <h2> Please only select one answer per question </h2>
+    <h3> <%=@topic1.question1 %> </h3>
+       <form action="/results" method="post">
+      <input type="radio" name="q6" value="V"> <%=@topic1.answer1%>
+    <br>
+      <input type="radio" name="q6" value="T"> <%=@topic1.answer2%>
+    <br>
+      <input type="radio" name="q6" value="A"> <%=@topic1.answer3%>
+      <br>
+     <h3> <%=@topic2.question1 %> </h3>
+      <input type="radio" name="q7" value="V"> <%=@topic2.answer1%>
+    <br>
+      <input type="radio" name="q7" value="A"> <%=@topic2.answer2%>
+    <br>
+      <input type="radio" name="q7" value="T"> <%=@topic2.answer3%>
+      <br>
+     <h3> <%=@topic3.question1 %> </h3>
+      <input type="radio" name="q8" value="A"> <%=@topic3.answer1%>
+    <br>
+      <input type="radio" name="q8" value="V"> <%=@topic3.answer2%>
+    <br>
+      <input type="radio" name="q8" value="T"> <%=@topic3.answer3%>
+      <br>
+     <h3> <%=@topic4.question1 %> </h3>
+      <input type="radio" name="q9" value="A"> <%=@topic4.answer1%>
+    <br>
+      <input type="radio" name="q9" value="T"> <%=@topic4.answer2%>
+    <br>
+      <input type="radio" name="q9" value="C"> <%=@topic4.answer3%>
+      <br>
+     <h3> <%=@topic5.question1 %> </h3>
+      <input type="radio" name="q10" value="V"> <%=@topic5.answer1%>
+    <br>
+      <input type="radio" name="q10" value="A"> <%=@topic5.answer2%>
+    <br>
+      <input type="radio" name="q10" value="T"> <%=@topic5.answer3%>
+      <br>
+      <input type="submit" name="next" href="/results">
+    </form>
+  </body>
+</html>
