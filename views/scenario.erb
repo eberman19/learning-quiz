@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Scenario Questions </title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title> Survey Questions </title>
+    <link rel="stylesheet" type="text/css" href="css/style_s.css">
   </head>
   <body>
+    <h1> What Kind of Learner are you? </h1>
+    <hr>
     <h1> Scenario Questions </h1>
     <h2> Please only select one answer per question </h2>
     <h3> <%=@topic1.question1 %> </h3>
-    <form action="/work" method="post">
+    <form action="/results" method="post">
       <input type="radio" name="q1" value="V"> <%=@topic1.answer1%>
     <br>
       <input type="radio" name="q1" value="T"> <%=@topic1.answer2%>
@@ -43,7 +45,188 @@
     <br>
       <input type="radio" name="q5" value="T"> <%=@topic5.answer3%>
       <br>
-      <input type="submit" name="next" href="/work">
+     <h1> Study Habit/Work Questions </h1>
+    <h3> <%=@topic6.question1 %> </h3>
+      <input type="radio" name="q6" value="V"> <%=@topic6.answer1%>
+    <br>
+      <input type="radio" name="q6" value="T"> <%=@topic6.answer2%>
+    <br>
+      <input type="radio" name="q6" value="A"> <%=@topic6.answer3%>
+      <br>
+     <h3> <%=@topic7.question1 %> </h3>
+      <input type="radio" name="q7" value="V"> <%=@topic7.answer1%>
+    <br>
+      <input type="radio" name="q7" value="A"> <%=@topic7.answer2%>
+    <br>
+      <input type="radio" name="q7" value="T"> <%=@topic7.answer3%>
+      <br>
+     <h3> <%=@topic8.question1 %> </h3>
+      <input type="radio" name="q8" value="A"> <%=@topic8.answer1%>
+    <br>
+      <input type="radio" name="q8" value="V"> <%=@topic8.answer2%>
+    <br>
+      <input type="radio" name="q8" value="T"> <%=@topic8.answer3%>
+      <br>
+     <h3> <%=@topic9.question1 %> </h3>
+      <input type="radio" name="q9" value="A"> <%=@topic9.answer1%>
+    <br>
+      <input type="radio" name="q9" value="T"> <%=@topic9.answer2%>
+    <br>
+      <input type="radio" name="q9" value="C"> <%=@topic9.answer3%>
+      <br>
+     <h3> <%=@topic10.question1 %> </h3>
+      <input type="radio" name="q10" value="V"> <%=@topic10.answer1%>
+    <br>
+      <input type="radio" name="q10" value="A"> <%=@topic10.answer2%>
+    <br>
+      <input type="radio" name="q10" value="T"> <%=@topic10.answer3%>
+      <br>
+<!--       --------- -->
+       <h1> Entertainment Preference Questions </h1>
+    <h3> <%=@topic16.question1 %> </h3>
+      <input type="radio" name="q16" value="V"> <%=@topic16.answer1%>
+    <br>
+      <input type="radio" name="q16" value="A"> <%=@topic16.answer2%>
+    <br>
+      <input type="radio" name="q16" value="T"> <%=@topic16.answer3%>
+      <br>
+     <h3> <%=@topic17.question1 %> </h3>
+      <input type="radio" name="q17" value="T"> <%=@topic17.answer1%>
+    <br>
+      <input type="radio" name="q17" value="A"> <%=@topic17.answer2%>
+    <br>
+      <input type="radio" name="q17" value="V"> <%=@topic17.answer3%>
+      <br>
+     <h3> <%=@topic18.question1 %> </h3>
+      <input type="radio" name="q18" value="V"> <%=@topic18.answer1%>
+    <br>
+      <input type="radio" name="q18" value="A"> <%=@topic18.answer2%>
+    <br>
+      <input type="radio" name="q18" value="T"> <%=@topic18.answer3%>
+      <br>
+     <h3> <%=@topic19.question1 %> </h3>
+      <input type="radio" name="q19" value="V"> <%=@topic19.answer1%>
+    <br>
+      <input type="radio" name="q19" value="A"> <%=@topic19.answer2%>
+    <br>
+      <input type="radio" name="q19" value="T"> <%=@topic19.answer3%>
+      <br>
+<!--       ------- -->
+      <h1> Picture Questions </h1>
+      <p> What's your spirit animal? </p>  
+     <img src="images/bat.png" height = "160" width = "170">
+  <input type="radio" name="q11" value="A">
+   
+<img src="images/whale.png" height = "160" width = "170"> 
+  <input type="radio" name="q11" value="A">
+    <br>
+<img src="images/cheetah.png" height = "160" width = "170"> 
+  <input type="radio" name="q11" value="T">
+    
+<img src="images/monkey.png" height = "160" width = "170"> 
+  <input type="radio" name="q11" value="V">
+   
+    <br>
+    <p> Which of these is your favorite color? </p>
+  <br>
+    <br>
+<img src="images/blue.png" height = "160" width = "170"> 
+  <input type="radio" name="q12" value="A">
+    
+<img src="images/red.png" height = "160" width = "170"> 
+  <input type="radio" name="q12" value="T">
+    <br>
+<img src="images/orange.png" height = "160" width = "170"> 
+  <input type="radio" name="q12" value="A">
+    
+<img src="images/purple.png" height = "160" width = "170"> 
+  <input type="radio" name="q12" value="V">
+    <br>
+    <p> Which of these games is your favorite? </p>
+  <br>
+    <br>
+<img src="images/simon_says.jpeg" height = "160" width = "170"> 
+  <input type="radio" name="q13" value="A">
+    
+<img src="images/twister.jpg" height = "160" width = "170"> 
+  <input type="radio" name="q13" value="T">
+    <br>
+<img src="images/pictionary.jpg" height = "160" width = "170"> 
+  <input type="radio" name="q13" value="V">
+    
+<img src="images/operation.jpg" height = "160" width = "170"> 
+  <input type="radio" name="q13" value="V">
+    <br>
+    <p> Which of these best describes your life?</p>
+<br>
+    <br>
+<img src="images/work.png" height = "160" width = "170"> 
+   <input type="radio" name="q14" value="A">
+  
+<img src="images/art.png" height = "160" width = "170"> 
+  <input type="radio" name="q14" value="V">
+    <br>
+<img src="images/party.png" height = "160" width = "170"> 
+  <input type="radio" name="q14" value="T">
+    
+<img src="images/sports.png" height = "160" width = "170"> 
+  <input type="radio" name="q14" value="T">
+    <br>
+    <p> If you were in a time machine, where would you go? </p>
+  <br>
+    <br>
+<img src="images/present.png" height = "160" width = "170"> 
+  <input type="radio" name="q15" value="V">
+    
+<img src="images/nowhere.jpg" height = "160" width = "170"> 
+  <input type="radio" name="q15" value="V">
+    <br>
+<img src="images/future.jpg" height = "160" width = "170"> 
+  <input type="radio" name="q15" value="T">
+   
+ <img src="images/past.jpg" height = "160" width = "170"> 
+    <input type="radio" name="q15" value="A">
+    <br>
+      <p> What is your favorite gif? </p>
+  <br>
+    <br>
+<img src="images/pizza.gif" height = "160" width = "170"> 
+  <input type="radio" name="q23" value="A">
+    
+<img src="images/construction.gif" height = "160" width = "170"> 
+  <input type="radio" name="q23" value="T">
+    <br>
+<img src="images/gif.gif" height = "160" width = "170"> 
+  <input type="radio" name="q23" value="V">
+   
+ <img src="images/banana.gif" height = "160" width = "170"> 
+    <input type="radio" name="q23" value="T">
+    <br>
+<!--       -------- -->
+      <h1> Style Preference Questions </h1>
+    <h3> <%=@topic16.question1 %> </h3>
+      <input type="radio" name="q20" value="V"> <%=@topic16.answer1%>
+    <br>
+      <input type="radio" name="q20" value="A"> <%=@topic16.answer2%>
+    <br>
+      <input type="radio" name="q20" value="T"> <%=@topic16.answer3%>
+    <br>
+       <h3> <%=@topic17.question1 %> </h3>
+      <input type="radio" name="q21" value="V"> <%=@topic17.answer1%>
+    <br>
+      <input type="radio" name="q21" value="A"> <%=@topic17.answer2%>
+    <br>
+      <input type="radio" name="q21" value="T"> <%=@topic17.answer3%>
+    <br>
+       <h3> <%=@topic18.question1 %> </h3>
+      <input type="radio" name="q22" value="V"> <%=@topic18.answer1%>
+    <br>
+      <input type="radio" name="q22" value="A"> <%=@topic18.answer2%>
+    <br>
+      <input type="radio" name="q22" value="T"> <%=@topic18.answer3%>
+    <br>
+<!--       -------- -->
+      <input type="submit" name="next" href="/results">
     </form>
   </body>
 </html>
