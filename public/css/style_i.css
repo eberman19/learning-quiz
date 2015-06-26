@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+  font-family: 'Times New Roman';
+  color: #16B1DB;
+}
+h2 {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Times New Roman';
+}
+img {
+  opacity: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 150px;
+}
+a {
+  text-align: center;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ font-size: 40px;
+ font-family: 'Times New Roman';
+ color: #16B1DB;;
+ font-weight: bold; 
+  border: 25px;
+  border-color: black;
+}
+/* .boxed {
+    padding: 25px;
+    border: 25px;
+  border-color: black;
+    margin: 25px;
+} */
+
+body {
+  background-color: lightgrey;
+}

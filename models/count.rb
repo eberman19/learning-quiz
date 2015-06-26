@@ -39,9 +39,9 @@ class Counter
     @a_count
   end
   def count
-    if @t_count > @v_count && @t_count > @a_count
+    if @t_count > @v_count && @t_count >= @a_count
       return "t"
-    elsif @v_count > @a_count && @v_count > @t_count
+    elsif @v_count >= @a_count && @v_count >= @t_count
       return "v"
     else
       return "a"

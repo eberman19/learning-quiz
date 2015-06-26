@@ -1,7 +1,61 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title> Results! </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style_r.css">
+  </head>
   <body>
     <br>
-    <p> My learn type is <%=@learntype%> </p>
+    <h1> Your learn type is <%=@learntype%>. </h1>
+    <br> 
+    <% if @learntype == "visual"%>
+    You learn best by reading and seeing pictures. You may sometimes close your eyes to visualize things or when you’re trying to remembering something.
+    <hr>
+Study Methods for your type:
+    <br>
+Create flashcards to aid with memorizing new words.
+   <br>
+ Try to picture what is said/ read to you in order to retain it more easily. 
+    <br>
+Take notes during lectures.
+    <br>
+Color-code your notes.
+    <br>
+Create visuals to help you learn new concepts. (Draw pictures, create charts, etc.)
+    <%elsif @learntype == "auditory"%>
+    You learn best by hearing and listening. You may sometimes read things out loud to retain information more easily. You remember information by the way it sounds. 
+    <hr>
+
+Study methods for your type: 
+    <br>
+Pay close attention when information is being said to you. 
+    <br>
+Create flashcards and say the words aloud when going through them to aid with memorizing.
+    <br>
+Anything you have to read, read it aloud.
+    <br>
+Try audio recording lectures, so you can listen to them later to study. 
+When you have to memorize information, record yourself saying it out loud and then listen to the recording.
+    <%else%>
+    You learn best by touching and doing, a “hands-on” learner. You retain information well when physical activity is involved: drawing, building, movement, etc. Being active and taking breaks while studying will improve how well you remember information.
+    <hr>
+Study methods for your type:
+    <br>
+Do some type of activity while studying AND taking tests. (Move around, rock in a chair, chew gum, etc) It’ll improve your memory.
+    <br>
+Create flashcards to memorize new words. Draw an image on each card that you can associate with the words.
+    <br>
+When reading, do mindless activity to help keep you focused. (Tapping your foot/ pencil, play with something in your hand, etc.)
+    <br>
+While studying, be sure to take frequent, quick breaks. Stay on task for approximately 30 minutes then maybe go eat a snack or take a short walk.
+    <br>
+Correspond new ideas with movement to more effectively recall information.
+    <%end%>
+    <hr>
+Thank you for taking our quiz!
+    Would you like to take this quiz <a href= "/"> again? </a>
+
+
   </body>
 </html>

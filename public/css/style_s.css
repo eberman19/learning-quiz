@@ -1,3 +1,20 @@
 h1 {
+  text-align: left;
+}
+.centered {
   text-align: center;
 }
+h2 {
+  text-align: left;
+  color: #303030;
+  font-weight: bold;
+}
+
+.body {
+  background-color: lightgrey;
+  font-family: 'Times New Roman'
+  
+}
+
+
+
